@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 
 
-def assignment(new_list, index, old_list, j):
-    new_list[index] = old_list[j]
+def assignment(new_list, i, old_list, j):
+    new_list[i] = old_list[j]
 
 
 def mergesort(list_to_sort_by_merge):
-    if (len(list_to_sort_by_merge) > 1):
+    if len(list_to_sort_by_merge) > 1:
         # Mitte, linke und rechte Hälfte der Liste bestimmen
         mid = len(list_to_sort_by_merge) // 2
         left = list_to_sort_by_merge[:mid]
