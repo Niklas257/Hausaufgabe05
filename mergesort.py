@@ -52,9 +52,13 @@ def mergesort(list_to_sort_by_merge):
 
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 x = range(len(my_list))
-plt.plot(x, my_list)
+plt.bar(x, my_list)
+plt.xticks([])
+plt.title("Unsorted Values")
 plt.show()
 mergesort(my_list)
 x = range(len(my_list))
-plt.plot(x, my_list)
+plt.bar(x, my_list)
+plt.xticks([])
+plt.title("Sorted Values")
 plt.show()
