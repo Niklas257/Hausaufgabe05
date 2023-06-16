@@ -12,3 +12,8 @@ def find_single_number(data):
             return num
         elif count > 2:
             return "Invalid Input"
+
+if __name__ == "__main__":
+    data = eval(input("List in form [x, y, z]: "))
+    print("Single number in the list:", 
+          find_single_number(data))

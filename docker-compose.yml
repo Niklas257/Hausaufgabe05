@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  run_tests:
+    build: .
+    volumes:
+      - ./:/files
+    working_dir: /files/
+    command: pytest
+  run_find:
+    build: .
+    volumes:
+      - ./:/files
+    working_dir: /files/
+    command: python3 find_single_number.py
