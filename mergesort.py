@@ -22,10 +22,20 @@ def mergesort(list_to_sort_by_merge):
 
         while left_index < len(left) and right_index < len(right):
             if left[left_index] <= right[right_index]:
-                assignment(new_list=list_to_sort_by_merge, index=index, old_list=left, j=left_index)
+                assignment(
+                    new_list=list_to_sort_by_merge,
+                    i=index,
+                    old_list=left,
+                    j=left_index,
+                )
                 left_index += 1
             else:
-                assignment(new_list=list_to_sort_by_merge, index=index, old_list=right, j=right_index)
+                assignment(
+                    new_list=list_to_sort_by_merge,
+                    i=index,
+                    old_list=right,
+                    j=right_index,
+                )
                 right_index += 1
             index += 1
 
